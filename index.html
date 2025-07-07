@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD Bimbingan Konseling – Manajemen Emosi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="lkpdForm">
+            <section id="halaman1" class="slide active">
+                <div class="cover-content">
+                    <h1>LKPD Bimbingan Konseling – Manajemen Emosi</h1>
+                    <h2>Kelas VIII SMP | Layanan Bimbingan Pribadi</h2>
+                    <div class="icon-container">
+                        <span>😊</span><span>😢</span><span>😡</span><span>😌</span>
+                    </div>
+                    <p class="author"><strong>Guru BK:</strong> Rahma Rinawati, M.Pd</p>
+                    <p class="school"><strong>Sekolah:</strong> SMPN 75 Kota Bekasi</p>
+                </div>
+            </section>
+
+            <section id="halaman2" class="slide">
+                <h2>Tujuan & Petunjuk</h2>
+                <ul class="tujuan-list">
+                    <li>✔️ Memahami konsep dasar emosi dan pentingnya manajemen emosi.</li>
+                    <li>✔️ Mengidentifikasi berbagai macam emosi yang dirasakan dalam seminggu terakhir.</li>
+                    <li>✔️ Mempelajari dan memilih strategi yang tepat untuk mengelola emosi.</li>
+                </ul>
+                <div class="quote-box">
+                    <p>"Aku belajar mengenal dan mengelola emosiku."</p>
+                </div>
+            </section>
+
+            <section id="halaman3" class="slide">
+                <h2>Bagian 1: Pencarian Masalah</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3>Studi Kasus: Lia</h3>
+                        <div class="case-box">
+                            <p>Lia merasa sangat kesal hari ini. Saat di sekolah, tugas kelompok yang ia kerjakan susah payah ternyata mendapat nilai jelek karena beberapa temannya tidak berkontribusi. Pulang sekolah, ia kehujanan dan sepatunya basah kuyup. Sesampainya di rumah, ia ingin marah tapi bingung harus bagaimana. ⛈️😡</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3>Pertanyaan Diskusi</h3>
+                        <div class="form-group">
+                            <label for="q1">1. Emosi apa yang sedang dirasakan Lia?</label>
+                            <input type="text" id="q1" name="kasus_emosi_lia">
+                            <label for="q2">2. Pernahkah kamu berada di posisi Lia? Ceritakan singkat!</label>
+                            <textarea id="q2" name="kasus_cerita_pribadi" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="halaman4" class="slide">
+                <h2>Bagian 2: Pemahaman Konsep</h2>
+                <div class="form-group">
+                    <label for="q3">Menurutmu, apa itu emosi?</label>
+                    <textarea id="q3" name="konsep_definisi_emosi" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tuliskan 3 emosi yang paling kamu rasakan minggu ini!</label>
+                    <div class="emotion-inputs">
+                        <input type="text" name="konsep_emosi_1" placeholder="Emosi 1">
+                        <input type="text" name="konsep_emosi_2" placeholder="Emosi 2">
+                        <input type="text" name="konsep_emosi_3" placeholder="Emosi 3">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="q4">Situasi seperti apa yang biasanya memicu emosi terkuatmu? 🤔</label>
+                    <textarea id="q4" name="konsep_pemicu_emosi" rows="2"></textarea>
+                </div>
+            </section>
+
+            <section id="halaman5" class="slide">
+                <h2>Bagian 3: Strategi Manajemen Emosi</h2>
+                <label>Pilih strategi yang ingin kamu coba saat merasakan emosi negatif:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="strategi" value="Pernapasan Dalam"> 🌬️ Pernapasan Dalam</label>
+                    <label><input type="checkbox" name="strategi" value="Self-Talk Positif"> 👍 Self-Talk Positif</label>
+                    <label><input type="checkbox" name="strategi" value="Menulis Jurnal"> ✍️ Menulis Jurnal</label>
+                    <label><input type="checkbox" name="strategi" value="Mendengarkan Musik"> 🎶 Mendengarkan Musik</label>
+                </div>
+                <div class="form-group">
+                    <label>Latihan: Jika kamu merasa (Nama Emosi), karena (Situasi Pemicu), maka aku akan melakukan (Cara Melakukannya).</label>
+                    <input type="text" name="strategi_latihan_emosi" placeholder="Nama Emosi, cth: marah">
+                    <input type="text" name="strategi_latihan_pemicu" placeholder="Situasi Pemicu, cth: dimarahi">
+                    <input type="text" name="strategi_latihan_cara" placeholder="Cara melakukannya, cth: menarik napas dalam">
+                </div>
+            </section>
+
+            <section id="halaman6" class="slide">
+                <h2>Bagian 4: Refleksi Diri</h2>
+                <div class="form-group">
+                    <label for="r1">1. Apa hal baru yang kamu pelajari tentang emosi hari ini?</label>
+                    <textarea id="r1" name="refleksi_hal_baru" rows="2"></textarea>
+                    <label for="r2">2. Strategi mana yang paling ingin kamu terapkan dalam kehidupan sehari-hari?</label>
+                    <textarea id="r2" name="refleksi_strategi_pilihan" rows="2"></textarea>
+                    <label for="r3">3. Mengapa penting bagimu untuk bisa mengelola emosi?</label>
+                    <textarea id="r3" name="refleksi_pentingnya" rows="2"></textarea>
+                </div>
+                <div class="quote-box">
+                    <p>“Mengelola emosi adalah langkah menjadi pribadi tangguh.”</p>
+                </div>
+            </section>
+
+            <section id="halaman7" class="slide">
+                <h2>Penutup & Penilaian</h2>
+                <div class="notes">
+                    <p><strong>Catatan Guru BK:</strong></p>
+                    <p>LKPD ini akan digunakan sebagai asesmen formatif untuk melihat pemahaman dan refleksimu terhadap materi manajemen emosi. Isilah dengan jujur sesuai pengalamanmu.</p>
+                </div>
+                <div class="form-group student-info">
+                     <label for="namaSiswa">Nama Siswa:</label>
+                     <input type="text" id="namaSiswa" name="nama_siswa" required>
+                     <label for="tanggal">Tanggal Pengerjaan:</label>
+                     <input type="date" id="tanggal" name="tanggal_pengerjaan" required>
+                </div>
+                <p class="final-message">Terima kasih telah belajar bersama! 😌</p>
+            </section>
+
+            <div class="navigation">
+                <button type="button" id="prevBtn">Sebelumnya</button>
+                <button type="button" id="nextBtn">Berikutnya</button>
+                <button type="submit" id="submitBtn">Kirim Jawaban</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
