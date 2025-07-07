@@ -1,21 +1,30 @@
+// GANTI SEMUA ISI SCRIPT.JS DENGAN INI
+
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const submitBtn = document.getElementById('submitBtn');
-    const form = document.getElementById('lkpdForm');
     
     let currentSlide = 0;
 
     function updateNavButtons() {
-        // Atur tombol 'Sebelumnya'
-        prevBtn.style.display = currentSlide === 0 ? 'none' : 'inline-block';
-        
-        // Atur tombol 'Berikutnya'
-        nextBtn.style.display = currentSlide === slides.length - 1 ? 'none' : 'inline-block';
+        // Sembunyikan semua tombol dulu
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        submitBtn.style.display = 'none';
 
-        // Atur tombol 'Kirim'
-        submitBtn.style.display = currentSlide === slides.length - 1 ? 'inline-block' : 'none';
+        // Tampilkan tombol berdasarkan halaman saat ini
+        if (currentSlide > 0) {
+            prevBtn.style.display = 'inline-block';
+        }
+        if (currentSlide < slides.length - 1) {
+            nextBtn.style.display = 'inline-block';
+        }
+        if (currentSlide === slides.length - 1) {
+            // Hanya tampilkan tombol submit di halaman terakhir
+            submitBtn.style.display = 'inline-block';
+        }
     }
 
     function showSlide(index) {
@@ -38,25 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault(); // Mencegah form reload halaman
-
-        // Mengumpulkan semua data dari form
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-
-        // Menampilkan data di console browser (untuk pengecekan)
-        console.log("LKPD Berhasil Dikumpulkan!");
-        console.log(data);
-        
-        // Menampilkan pesan sukses
-        alert(`Terima kasih, ${data.nama_siswa}! Jawabanmu telah berhasil dikirim.`);
-        
-        // Mengosongkan form
-        form.reset();
-        showSlide(0); // Kembali ke halaman pertama
-    });
-
-    // Inisialisasi
+    // Inisialisasi tampilan awal
     showSlide(0);
 });
